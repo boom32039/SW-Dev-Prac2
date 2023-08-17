@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <script src="register.js"></script>
     <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css"></link>
 </head>
 <body>
-    <script> src="node_modules\bootstrap\dist\js\bootstrap.min.js"</script>
-    <div class="container">
+        <div class="container">
         <main>
           <div class="py-5 text-center">
             <h2>Register form</h2>
@@ -24,9 +25,6 @@
                   <div class="col-sm-6">
                     <label for="companyName" class="form-label">ชื่อบริษัท</label>
                     <input type="text" class="form-control" id="companyName" placeholder="" value="" required="">
-                    <!-- <div class="invalid-feedback">
-                      Valid first name is required.
-                    </div> -->
                   </div>
                   <div class="col-md-5">
                     <label for="boothSize" class="form-label">ขนาดบูธ</label>
@@ -35,9 +33,6 @@
                       <option>10 x 10 ฟุต</option>
                       <option>10 x 15 ฟุต</option>
                     </select>
-                    <!-- <div class="invalid-feedback">
-                      Please select a valid country.
-                    </div> -->
                   </div>
 
                   <div class="form-check">
@@ -50,9 +45,6 @@
                     <label for="chairAmount" class="form-label">จำนวนเก้าอี้</label>
                     <div class="input-group has-validation">
                       <input type="text" class="form-control" id="chairAmount" placeholder="" required="">
-                    <!-- <div class="invalid-feedback">
-                        Your username is required.
-                      </div> -->
                     </div>
                   </div>
       
@@ -60,9 +52,6 @@
                     <label for="contactName" class="form-label">ชื่อผู้ติดต่อ</label>
                     <div class="input-group has-validation">
                       <input type="text" class="form-control" id="contactName" placeholder="" required="">
-                    <!-- <div class="invalid-feedback">
-                        Your username is required.
-                      </div> -->
                     </div>
                   </div>
 
@@ -70,9 +59,6 @@
                     <label for="contactTel" class="form-label">เบอร์ผู้ติดต่อ</label>
                     <div class="input-group has-validation">
                       <input type="text" class="form-control" id="contactTel" placeholder="" required="">
-                    <!-- <div class="invalid-feedback">
-                        Your username is required.
-                      </div> -->
                     </div>
                   </div>
                 <hr>
@@ -80,7 +66,8 @@
                 <form action="index.html">  
                   <button class="w-100 btn btn-primary btn-lg" type="submit">Back to Main Page</button>
                 </form>
-                <button class="w-100 btn btn-primary btn-lg" type="submit">Register</button>
+                <!-- <button class="w-100 btn btn-primary btn-lg" type="button" onclick=checkCondition()>Register</button> -->
+                <button class="w-100 btn btn-primary btn-lg" type="button" id="register" onclick=checkCondition()>Register</button>
               </form>
             </div>
           </div>
@@ -90,5 +77,7 @@
           
         </footer>
       </div>
+
+      
 </body>
 </html>
